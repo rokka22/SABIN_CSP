@@ -1,0 +1,46 @@
+[
+  {
+    "ip": "192.168.1.1",
+    "mac": "00:11:22:33:44:55",
+    "hostname": "gateway.local",
+    "ports": [
+      80,
+      443
+    ],
+    "os": "Linux",
+    "timestamp": "2026-01-17T22:07:00.669607"
+  },
+  {
+    "ip": "192.168.1.100",
+    "mac": "AA:BB:CC:DD:EE:FF",
+    "hostname": "desktop-pc.local",
+    "ports": [
+      135,
+      139,
+      445
+    ],
+    "os": "Windows 10",
+    "timestamp": "2026-01-17T22:07:00.669632"
+  },
+  {
+    "ip": "192.168.1.101",
+    "mac": "11:22:33:44:55:66",
+    "hostname": "laptop.local",
+    "ports": [
+      22,
+      80
+    ],
+    "os": "Linux",
+    "timestamp": "2026-01-17T22:07:00.669634"
+  },
+  {
+    "ip": "192.168.1.50",
+    "mac": "22:33:44:55:66:77",
+    "hostname": "printer.local",
+    "ports": [
+      9100
+    ],
+    "os": "CUPS Print Server",
+    "timestamp": "2026-01-17T22:07:00.669636"
+  }
+]

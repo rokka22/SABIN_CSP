@@ -1,0 +1,74 @@
+[
+  {
+    "src_ip": "192.168.1.100",
+    "dst_ip": "8.8.8.8",
+    "protocol": "TCP",
+    "dst_port": 80,
+    "size": 1500,
+    "flags": "PSH"
+  },
+  {
+    "src_ip": "192.168.1.100",
+    "dst_ip": "8.8.8.8",
+    "protocol": "TCP",
+    "dst_port": 443,
+    "size": 2000,
+    "flags": "PSH"
+  },
+  {
+    "src_ip": "192.168.1.100",
+    "dst_ip": "8.8.8.8",
+    "protocol": "TCP",
+    "dst_port": 443,
+    "size": 2000,
+    "flags": "PSH"
+  },
+  {
+    "src_ip": "192.168.1.100",
+    "dst_ip": "8.8.8.8",
+    "protocol": "UDP",
+    "dst_port": 53,
+    "size": 150,
+    "flags": null
+  },
+  {
+    "src_ip": "192.168.1.101",
+    "dst_ip": "8.8.8.8",
+    "protocol": "UDP",
+    "dst_port": 53,
+    "size": 150,
+    "flags": null
+  },
+  {
+    "src_ip": "192.168.1.101",
+    "dst_ip": "142.251.41.14",
+    "protocol": "TCP",
+    "dst_port": 443,
+    "size": 1800,
+    "flags": "PSH"
+  },
+  {
+    "src_ip": "192.168.1.50",
+    "dst_ip": "8.8.8.8",
+    "protocol": "UDP",
+    "dst_port": 53,
+    "size": 150,
+    "flags": null
+  },
+  {
+    "src_ip": "192.168.1.1",
+    "dst_ip": "192.168.1.100",
+    "protocol": "TCP",
+    "dst_port": 22,
+    "size": 100,
+    "flags": "PSH"
+  },
+  {
+    "src_ip": "192.168.1.100",
+    "dst_ip": "192.168.1.1",
+    "protocol": "TCP",
+    "dst_port": 22,
+    "size": 100,
+    "flags": "PSH"
+  }
+]

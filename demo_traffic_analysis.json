@@ -1,0 +1,61 @@
+def traffic_analysis_page():
+    st.header("📊 Traffic Analysis")
+
+    data = load_json("demo_traffic_analysis.json")
+
+    if not data:
+        st.warning("No traffic data found.")
+        return
+
+    # =========================
+    # Summary Section
+    # =========================
+    st.subheader("Summary")
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total Packets", data.get("total_packets", 0))
+    col2.metric("Total Bytes", data.get("total_bytes", 0))
+    col3.metric("Timestamp", data.get("timestamp", "N/A"))
+
+    # =========================
+    # Protocol Distribution
+    # =========================
+    st.subheader("Protocol Distribution")
+
+    protocol_dist = data.get("protocol_distribution", {})
+
+    if protocol_dist:
+        proto_df = pd.DataFrame(
+            [{"protocol": k, "count": v} for k, v in protocol_dist.items()]
+        )
+
+        fig = px.pie(
+            proto_df,
+            names="protocol",
+            values="count",
+            title="Protocol Distribution"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No protocol distribution data available.")
+
+    # =========================
+    # Top Ports
+    # =========================
+    st.subheader("Top Ports")
+
+    top_ports = data.get("top_ports", [])
+
+    if top_ports:
+        ports_df = pd.DataFrame(top_ports)
+        st.dataframe(ports_df)
+
+        fig2 = px.bar(
+            ports_df,
+            x="port",
+            y="count",
+            title="Top Ports by Traffic"
+        )
+        st.plotly_chart(fig2, use_container_width=True)
+    else:
+        st.info("No top ports data available.")
