@@ -13,10 +13,10 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 
-from network_scanner import NetworkScanner
-from packet_analyzer import PacketAnalyzer
-from traffic_analyzer import TrafficAnalyzer
-from anomaly_detector import AnomalyDetector
+#from network_scanner import NetworkScanner
+#from packet_analyzer import PacketAnalyzer
+#from traffic_analyzer import TrafficAnalyzer
+#from anomaly_detector import AnomalyDetector
 
 # =========================
 # Page Config
@@ -128,3 +128,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
