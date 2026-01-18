@@ -109,11 +109,12 @@ page = st.sidebar.radio(
 if page == "Home":
     home_page()
 elif page == "Traffic Analysis":
+    st.info("Traffic analysis is running in DEMO mode on Streamlit Cloud.")
     traffic_analysis_page()
+
 elif page == "Anomaly Detection":
-    anomaly_detection_page()
-elif page == "Reports":
-    reports_page()
+    st.info("Anomaly detection is disabled in Streamlit Cloud demo.")
+
 
 # =========================
 # Footer
@@ -128,4 +129,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
